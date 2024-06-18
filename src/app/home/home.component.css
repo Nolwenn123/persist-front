@@ -1,0 +1,54 @@
+/* home.component.css */
+
+.container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.barbie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.barbie-item {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barbie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.barbie-details {
+  margin-top: 8px;
+}
+
+.barbie-details h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.barbie-details p {
+  color: #666;
+  margin: 4px 0;
+}

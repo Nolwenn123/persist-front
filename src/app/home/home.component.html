@@ -1,0 +1,18 @@
+<!-- home.component.html -->
+
+<div class="container">
+  <h1>Bienvenue sur le Répertoire des Barbies</h1>
+  <p>Nombre de Barbies : {{ barbies.length }}</p>
+
+  <div class="barbie-list">
+    <div *ngFor="let barbie of barbies" class="barbie-item">
+      <img [src]="barbie.imageUrl" alt="{{ barbie.firstName }} {{ barbie.lastName }}">
+      <div class="barbie-details">
+        <h3>{{ barbie.firstName }} {{ barbie.lastName }}</h3>
+        <p>Modèle: {{ barbie.model.name }}</p>
+        <p>Modèle ID: {{ barbie.model.model_id }}</p>
+        <p>Année de Sortie: {{ barbie.releaseYear }}</p>
+      </div>
+    </div>
+  </div>
+</div>
