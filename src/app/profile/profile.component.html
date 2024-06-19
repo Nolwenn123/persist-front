@@ -1,0 +1,40 @@
+<div class="profile-container">
+  <h2>Créer une Barbie</h2>
+  
+  <form (ngSubmit)="createBarbie()">
+    <!-- Selection du modèle -->
+    <div class="form-group">
+      <label for="model">Modèle:</label>
+      <select id="model" name="model" class="form-control" [(ngModel)]="newBarbie.modelId" required>
+        <option *ngFor="let model of models" [value]="model.model_id">{{ model.name }}</option>
+      </select>
+    </div>
+    
+    <!-- Prénom -->
+    <div class="form-group">
+      <label for="firstName">Prénom:</label>
+      <input type="text" id="firstName" name="firstName" class="form-control" [(ngModel)]="newBarbie.firstName" required>
+    </div>
+    
+    <!-- Nom -->
+    <div class="form-group">
+      <label for="lastName">Nom:</label>
+      <input type="text" id="lastName" name="lastName" class="form-control" [(ngModel)]="newBarbie.lastName" required>
+    </div>
+    
+    <!-- URL de l'image -->
+    <div class="form-group">
+      <label for="imageUrl">URL de l'image:</label>
+      <input type="text" id="imageUrl" name="imageUrl" class="form-control" [(ngModel)]="newBarbie.imageUrl" required>
+    </div>
+    
+    <!-- Année de sortie -->
+    <div class="form-group">
+      <label for="releaseYear">Année de sortie:</label>
+      <input type="date" id="releaseYear" name="releaseYear" class="form-control" [(ngModel)]="newBarbie.releaseYear" required>
+    </div>
+    
+    <!-- Bouton de soumission -->
+    <button type="submit" class="btn btn-primary">Créer Barbie</button>
+  </form>
+</div>

@@ -3,7 +3,7 @@
 <div class="container">
   <h1>Bienvenue sur le Répertoire des Barbies</h1>
   <p>Nombre de Barbies : {{ barbies.length }}</p>
-
+  <button [routerLink]="['/profile']">Profil</button>
   <div class="barbie-list">
     <div *ngFor="let barbie of barbies" class="barbie-item">
       <img [src]="barbie.imageUrl" alt="{{ barbie.firstName }} {{ barbie.lastName }}">
@@ -13,6 +13,9 @@
         <p>Modèle ID: {{ barbie.model.model_id }}</p>
         <p>Année de Sortie: {{ barbie.releaseYear }}</p>
       </div>
+<button (click)="deleteBarbie(barbie)">Supprimer</button>
     </div>
   </div>
 </div>
+
+

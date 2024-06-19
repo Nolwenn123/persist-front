@@ -52,3 +52,19 @@ h1 {
   color: #666;
   margin: 4px 0;
 }
+
+/* home.component.css */
+
+button {
+  background-color: #ff69b4; /* Rose */
+  color: #ffffff; /* Blanc */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff5f9e; /* Rose plus foncé au survol */
+}
+
