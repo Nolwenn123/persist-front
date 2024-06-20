@@ -9,8 +9,8 @@ import { Model } from '../../models/model.model'; // Ajoutez cette ligne
 })
 export class BarbieService {
 
-  private baseUrl = 'http://barbie-api:1100/api/barbies';
-  private modelUrl = 'http://barbie-api:1100/api/models';
+  private baseUrl = 'https://caca-latest.onrender.com';
+  private modelUrl = 'https://caca-latest.onrender.com';
 
   constructor(private http: HttpClient) { }
 
