@@ -9,8 +9,8 @@ import { Model } from '../../models/model.model'; // Ajoutez cette ligne
 })
 export class BarbieService {
 
-  private baseUrl = 'http://localhost:8080/api/barbies';
-  private modelUrl = 'http://localhost:8080/api/models'; // Ajoutez cette ligne
+  private baseUrl = 'http://barbie-api:1100/api/barbies';
+  private modelUrl = 'http://barbie-api:1100/api/models';
 
   constructor(private http: HttpClient) { }
 
